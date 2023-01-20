@@ -1,92 +1,94 @@
-[
-  {
-    "id": 1,
-    "year": 1987,
-    "artist": "Rick Astley",
-    "album": "Whenever you need somebody",
-    "image": "https://upload.wikimedia.org/wikipedia/en/1/1c/Rick_Astley_-_Whenever_You_Need_Somebody.png",
-    "genres": ["Electronic", "Pop"],
-    "link": "https://en.wikipedia.org/wiki/Rick_Astley"
-  },
-  {
-    "id": 2,
-    "year": 1998,
-    "artist": "Madonna",
-    "album": "Like a Virgin",
-    "image": "https://upload.wikimedia.org/wikipedia/en/1/17/LikeAVirgin1984.png",
-    "genres": ["Electronic"],
-    "link": "https://en.wikipedia.org/wiki/Madonna"
-  },
-  {
-    "id": 3,
-    "year": 1992,
-    "artist": "Dr Dre",
-    "album": "The Chronic",
-    "image": "https://upload.wikimedia.org/wikipedia/en/1/19/Dr.DreTheChronic.jpg",
-    "genres": ["Rap and Hip Hop"],
-    "link": "https://en.wikipedia.org/wiki/Dr._Dre"
-  },
-  {
-    "id": 4,
-    "year": 1969,
-    "artist": "Creedence Clearwater Revival",
-    "album": "Bayou Country",
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Creedence_Clearwater_Revival_-_Bayou_Country.jpg/220px-Creedence_Clearwater_Revival_-_Bayou_Country.jpg",
-    "genres": ["Rock"],
-    "link": "https://en.wikipedia.org/wiki/Creedence_Clearwater_Revival"
-  },
-  {
-    "id": 5,
-    "year": 1979,
-    "artist": "the Clash",
-    "album": "London Calling",
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/00/TheClashLondonCallingalbumcover.jpg/220px-TheClashLondonCallingalbumcover.jpg",
-    "genres": ["Pop", "Hard Rock", "Punk"],
-    "link": "https://en.wikipedia.org/wiki/The_Clash"
-  },
-  {
-    "id": 6,
-    "year": 1998,
-    "artist": "Oasis",
-    "album": "TheMasterplan",
-    "image": "https://upload.wikimedia.org/wikipedia/en/b/b8/MasterplanOasisalbumcover.jpg",
-    "genres": ["Indie", "Pop"],
-    "link": "https://en.wikipedia.org/wiki/Oasis_(band)"
-  },
-  {
-    "id": 7,
-    "year": 1994,
-    "artist": "Blur",
-    "album": "Parklife",
-    "image": "https://upload.wikimedia.org/wikipedia/en/7/7d/BlurParklife.jpg",
-    "genres": ["Indie"],
-    "link": "https://en.wikipedia.org/wiki/Blur_(band)"
-  },
-  {
-    "id": 8,
-    "year": 1972,
-    "artist": "The Rolling Stones",
-    "album": "Exile on Main St",
-    "image": "https://cdn.shopify.com/s/files/1/0117/4483/7728/files/Exile_on_Main_Street_large.jpg?v=1599247721",
-    "genres": ["Rythm and Blues", "Rock"],
-    "link": "https://en.wikipedia.org/wiki/The_Rolling_Stones"
-  },
-  {
-    "id": 9,
-    "year": 1969,
-    "artist": "Led Zeppelin",
-    "album": "Led Zeppelin II",
-    "image": "https://m.media-amazon.com/images/I/71mKCivU38L._AC_SX450_.jpg",
-    "genres": ["Hard Rock", "Rock"],
-    "link": "https://en.wikipedia.org/wiki/Led_Zeppelin"
-  },
-  {
-    "id": 10,
-    "year": 2006,
-    "artist": "Hot Chip",
-    "album": "The Warning",
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Hot_Chip_-_The_Warning.jpg/220px-Hot_Chip_-_The_Warning.jpg",
-    "genres": ["Electronic", "Pop"],
-    "link": "https://en.wikipedia.org/wiki/Hot_Chip"
-  }
-]
+{
+  "albums": [
+    {
+      "id": 1,
+      "year": 1987,
+      "artist": "Rick Astley",
+      "album": "Whenever you need somebody",
+      "image": "https://upload.wikimedia.org/wikipedia/en/1/1c/Rick_Astley_-_Whenever_You_Need_Somebody.png",
+      "genres": ["Electronic", "Pop"],
+      "link": "https://en.wikipedia.org/wiki/Rick_Astley"
+    },
+    {
+      "id": 2,
+      "year": 1998,
+      "artist": "Madonna",
+      "album": "Like a Virgin",
+      "image": "https://upload.wikimedia.org/wikipedia/en/1/17/LikeAVirgin1984.png",
+      "genres": ["Electronic"],
+      "link": "https://en.wikipedia.org/wiki/Madonna"
+    },
+    {
+      "id": 3,
+      "year": 1992,
+      "artist": "Dr Dre",
+      "album": "The Chronic",
+      "image": "https://upload.wikimedia.org/wikipedia/en/1/19/Dr.DreTheChronic.jpg",
+      "genres": ["Rap and Hip Hop"],
+      "link": "https://en.wikipedia.org/wiki/Dr._Dre"
+    },
+    {
+      "id": 4,
+      "year": 1969,
+      "artist": "Creedence Clearwater Revival",
+      "album": "Bayou Country",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Creedence_Clearwater_Revival_-_Bayou_Country.jpg/220px-Creedence_Clearwater_Revival_-_Bayou_Country.jpg",
+      "genres": ["Rock"],
+      "link": "https://en.wikipedia.org/wiki/Creedence_Clearwater_Revival"
+    },
+    {
+      "id": 5,
+      "year": 1979,
+      "artist": "the Clash",
+      "album": "London Calling",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/00/TheClashLondonCallingalbumcover.jpg/220px-TheClashLondonCallingalbumcover.jpg",
+      "genres": ["Pop", "Hard Rock", "Punk"],
+      "link": "https://en.wikipedia.org/wiki/The_Clash"
+    },
+    {
+      "id": 6,
+      "year": 1998,
+      "artist": "Oasis",
+      "album": "TheMasterplan",
+      "image": "https://upload.wikimedia.org/wikipedia/en/b/b8/MasterplanOasisalbumcover.jpg",
+      "genres": ["Indie", "Pop"],
+      "link": "https://en.wikipedia.org/wiki/Oasis_(band)"
+    },
+    {
+      "id": 7,
+      "year": 1994,
+      "artist": "Blur",
+      "album": "Parklife",
+      "image": "https://upload.wikimedia.org/wikipedia/en/7/7d/BlurParklife.jpg",
+      "genres": ["Indie"],
+      "link": "https://en.wikipedia.org/wiki/Blur_(band)"
+    },
+    {
+      "id": 8,
+      "year": 1972,
+      "artist": "The Rolling Stones",
+      "album": "Exile on Main St",
+      "image": "https://cdn.shopify.com/s/files/1/0117/4483/7728/files/Exile_on_Main_Street_large.jpg?v=1599247721",
+      "genres": ["Rythm and Blues", "Rock"],
+      "link": "https://en.wikipedia.org/wiki/The_Rolling_Stones"
+    },
+    {
+      "id": 9,
+      "year": 1969,
+      "artist": "Led Zeppelin",
+      "album": "Led Zeppelin II",
+      "image": "https://m.media-amazon.com/images/I/71mKCivU38L._AC_SX450_.jpg",
+      "genres": ["Hard Rock", "Rock"],
+      "link": "https://en.wikipedia.org/wiki/Led_Zeppelin"
+    },
+    {
+      "id": 10,
+      "year": 2006,
+      "artist": "Hot Chip",
+      "album": "The Warning",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Hot_Chip_-_The_Warning.jpg/220px-Hot_Chip_-_The_Warning.jpg",
+      "genres": ["Electronic", "Pop"],
+      "link": "https://en.wikipedia.org/wiki/Hot_Chip"
+    }
+  ]
+}
