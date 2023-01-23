@@ -1,9 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
+/* @media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(124, 124, 136);
+  }
+  .App {
+    display: grid;
+    grid-template-columns: 100%;
+    
+  }
+} */
+
 /* base styles */
 
 * {
   margin: 0%;
   font-family: "Quicksand";
   color: #333;
+}
+/* NavBar. 
+Flex is the value of css display . By using display flex in parent elements, child elements automatically align like columns or rows with auto width and auto height*/
+
+.navbar {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 2px solid #333;
+}
+
+.navbar-links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 4px;
+}
+
+.navbar a:hover {
+  color: green;
 }
