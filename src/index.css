@@ -18,6 +18,11 @@
   font-family: "Quicksand";
   color: #333;
 }
+
+.content {
+  max-width: 600px;
+  margin: auto;
+}
 /* NavBar. 
 Flex is the value of css display . By using display flex in parent elements, child elements automatically align like columns or rows with auto width and auto height*/
 
@@ -27,6 +32,7 @@ Flex is the value of css display . By using display flex in parent elements, chi
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
+  margin-bottom: 1.5rem;
   border-bottom: 2px solid #333;
 }
 
@@ -42,4 +48,44 @@ Flex is the value of css display . By using display flex in parent elements, chi
 
 .navbar a:hover {
   color: green;
+}
+
+.navbar h1 {
+  color: green;
+}
+
+/* album preview/home */
+
+.home {
+  text-align: center;
+}
+
+.album-list h2 {
+  color: green;
+}
+
+.album-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #333;
+}
+
+.album-preview:hover {
+  box-shadow: 1px 1px 1px green;
+}
+
+.album-preview h4 {
+  margin: 0.25rem;
+}
+
+.album-preview img {
+  height: 50%;
+  box-shadow: 3px 3px 3px #333;
+  border-radius: 5px;
+}
+
+/* search bar */
+
+.home input {
+  margin-bottom: 12px;
 }
