@@ -82,6 +82,8 @@ Flex is the value of css display . By using display flex in parent elements, chi
   height: 50%;
   box-shadow: 3px 3px 3px #333;
   border-radius: 5px;
+  margin-top: 0.5rem;
+  padding: o;
 }
 
 /* search bar */
