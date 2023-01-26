@@ -11,18 +11,39 @@ const Home = () => {
       .then((albumsFromAPI) => setAlbumData(albumsFromAPI));
   }, []);
 
+  console.log(albumData);
+
   const handleSearch = (e) => {
-    const searchInput = e.target.value.toString();
+    setTimeout(() => {
+      const searchInput = e.target.value.toString();
+      // const genresStr = [];
 
-    const searchResult = albumData.filter((albums) => {
-      return (
-        albums.year.toString() === searchInput ||
-        albums.title.toLowerCase().includes(searchInput.toLowerCase()) ||
-        albums.artist.toLowerCase().includes(searchInput.toLowerCase())
-      );
-    });
+      // albumData.forEach((album) => {
+      //   genresStr.push(album.genres);
+      // });
 
-    setFilteredData(searchResult);
+      const searchResult = albumData.filter((albums) => {
+        const genreArray = [];
+
+        albums.genres.forEach((genre) => {
+          genreArray.push(genre.toLowerCase());
+        });
+
+        //   for (let i = 0; i < albums.genres.length; i++) {
+
+        //     genre.push(albums.genres[i].toLowerCase());
+        //   }
+
+        return (
+          genreArray.includes(searchInput.toLowerCase()) ||
+          albums.year.toString() === searchInput ||
+          albums.title.toLowerCase().includes(searchInput.toLowerCase()) ||
+          albums.artist.toLowerCase().includes(searchInput.toLowerCase())
+        );
+      });
+
+      setFilteredData(searchResult);
+    }, 1000);
   };
 
   return (
