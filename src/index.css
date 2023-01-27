@@ -65,8 +65,7 @@ Flex is the value of css display . By using display flex in parent elements, chi
 }
 
 .album-preview {
-  padding: 10px 16px;
-  margin: 20px 0;
+  margin: 24px;
   border-bottom: 1px solid #333;
 }
 
@@ -75,15 +74,36 @@ Flex is the value of css display . By using display flex in parent elements, chi
 }
 
 .album-preview h4 {
-  margin: 0.25rem;
+  margin: 8px;
 }
 
 .album-preview img {
+  box-shadow: 3px 3px 3px #333;
+  border-radius: 5px;
+}
+
+/* album-details/button */
+
+.album-list a {
+  background: green;
+  border: 0;
+  font-size: 14px;
+  padding: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.album-button {
+  margin-bottom: 16px;
+  margin-top: 12px;
+}
+
+.album-details img {
   height: 50%;
   box-shadow: 3px 3px 3px #333;
   border-radius: 5px;
-  margin-top: 0.5rem;
-  padding: o;
 }
 
 /* search bar */
