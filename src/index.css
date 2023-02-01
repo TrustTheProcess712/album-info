@@ -23,6 +23,10 @@
   max-width: 600px;
   margin: auto;
 }
+
+h2 {
+  color: green;
+}
 /* NavBar. 
 Flex is the value of css display . By using display flex in parent elements, child elements automatically align like columns or rows with auto width and auto height*/
 
@@ -60,10 +64,6 @@ Flex is the value of css display . By using display flex in parent elements, chi
   text-align: center;
 }
 
-.album-list h2 {
-  color: green;
-}
-
 .album-preview {
   margin: 24px;
   border-bottom: 1px solid #333;
@@ -82,7 +82,7 @@ Flex is the value of css display . By using display flex in parent elements, chi
   border-radius: 5px;
 }
 
-/* album-details/button */
+/* album-list/button */
 
 .album-list a {
   background: green;
@@ -110,4 +110,74 @@ Flex is the value of css display . By using display flex in parent elements, chi
 
 .home input {
   margin-bottom: 12px;
+}
+
+/* create album page */
+
+.create-album {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.create-album h2 {
+  margin-bottom: 12px;
+}
+
+.create-album label {
+  text-align: left;
+  display: block;
+}
+
+.create-album input,
+select {
+  width: 100%;
+  padding: 6px 10px;
+  margin-bottom: 12px;
+  border: 1px solid;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.create-album button {
+  background: green;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* album-details page */
+
+.album-details h2 {
+  margin-bottom: 12px;
+}
+
+.album-details {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.album-details img {
+  margin: 12px 12px;
+}
+
+.album-details button {
+  background: green;
+  color: #fff;
+  border: 0;
+  margin-top: 12px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.wiki-link a:hover {
+  color: green;
+}
+
+.wiki-link a {
+  text-decoration: none;
 }
