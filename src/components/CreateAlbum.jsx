@@ -6,16 +6,30 @@ const CreateAlbum = () => {
   const [year, setYear] = useState("");
   const [image, setImage] = useState("");
   const [link, setLink] = useState("");
+  const [genres, setGenres] = useState([]);
+
+  const handleGenres = (e) => {
+    const genresArray = [];
+    genresArray.push(e.target.value);
+    setGenres(genresArray);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const album = { year, artist, title, image, link };
+    const album = { year, artist, title, image, link, genres };
+
+    fetch("http://localhost:5000/albums", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(album),
+    }).then(() => {
+      console.log("new album added");
+    });
   };
 
-  console.log(year);
   return (
     <div className='create-album'>
-      <h2>Share a Favourite Album</h2>
+      <h2>Share Your Favourite Album</h2>
       <form onSubmit={handleSubmit}></form>
       <label>Artist Name: </label>
       <input
@@ -31,6 +45,14 @@ const CreateAlbum = () => {
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
+      <label>Genres: </label>
+      <input
+        type='text'
+        required
+        value={genres}
+        placeholder='eg. Rock, Indie, Pop'
+        onChange={handleGenres}
+      />
       <label>Year released: </label>
       <input
         type='text'
@@ -38,7 +60,7 @@ const CreateAlbum = () => {
         value={year}
         onChange={(e) => setYear(e.target.value)}
       />
-      <label>ALbum image URL: </label>
+      <label>Album image URL: </label>
       <input
         type='text'
         required
@@ -53,6 +75,7 @@ const CreateAlbum = () => {
         value={link}
         onChange={(e) => setLink(e.target.value)}
       />
+      <button onClick={handleSubmit}>Submit Album</button>
     </div>
   );
 };
