@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const CreateAlbum = () => {
   const [artist, setArtist] = useState("");
@@ -7,6 +8,7 @@ const CreateAlbum = () => {
   const [image, setImage] = useState("");
   const [link, setLink] = useState("");
   const [genres, setGenres] = useState([]);
+  const navigate = useNavigate();
 
   const handleGenres = (e) => {
     const genresArray = [];
@@ -22,9 +24,13 @@ const CreateAlbum = () => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(album),
-    }).then(() => {
-      console.log("new album added");
-    });
+    })
+      .then(() => {
+        console.log("new album added");
+      })
+      .then(() => {
+        navigate("/");
+      });
   };
 
   return (
